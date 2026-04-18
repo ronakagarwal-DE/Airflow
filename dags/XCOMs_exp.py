@@ -28,7 +28,6 @@ def XCOMs_exp():
     second = second_task(first)
     third = third_task(second)
     
-    first >> second >> third
     
 XCOMs_exp()
 
