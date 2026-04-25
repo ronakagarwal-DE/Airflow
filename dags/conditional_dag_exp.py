@@ -10,6 +10,7 @@ def branch_dag():
     def extract_task(**kwargs):
         print("Extracting Data.....")
         ti = kwargs['ti']
+        print('kwargs:', kwargs, end='\n')
         extracted_data_dict = {"api_extracted_data":[1,2,3],
                                "db_extracted_data":[4,5,6],
                                "s3_extracted_data":[7,8,9],
